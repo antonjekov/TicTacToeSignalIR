@@ -1,0 +1,36 @@
+﻿<div class="container">
+    <div class="row pb-2">
+        <div class="col d-flex justify-content-center">
+            <h3 class="m-1" id="Message"></h3>
+        </div>
+    </div>
+    <div class="row pb-2">
+        <div class="col-lg-4 mx-auto embed-responsive embed-responsive-1by1" id="game-screen" >
+            <div class="game-board embed-responsive-item">
+                <div class="box" id="cell00"></div>
+                <div class="box" id="cell01"></div>
+                <div class="box" id="cell02"></div>
+                <div class="box" id="cell10"></div>
+                <div class="box" id="cell11"></div>
+                <div class="box" id="cell12"></div>
+                <div class="box" id="cell20"></div>
+                <div class="box" id="cell21"></div>
+                <div class="box" id="cell22"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row pb-2">
+        <div class="col d-flex justify-content-center">
+            <button class="btn btn-success m-1 d-block" id="playGame">Play</button>
+            <button class="btn btn-danger m-1 d-none" id="giveUp">I give up</button>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <link href="~/css/TicTacToe/TicTacToeBoard.css" rel="stylesheet" />
+}
+@section Scripts {
+    <script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+    <script src="~/js/tictactoe.js"></script>
+}
